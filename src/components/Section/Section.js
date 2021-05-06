@@ -5,12 +5,13 @@ import PropTypes from 'prop-types';
 export default function Section(props) {
   return (
     <>
-      <h1>Section Stats</h1>
-      <h2>{props.title}</h2>
-      <h2> Feedback options </h2>
       <FeedbackOptions
-        onLeaveFeedback={props.onLeaveFeedback}
-      ></FeedbackOptions>
+        onLeaveFeedback={props.onLeaveFeedback} 
+        titleOne = {props.titleOne} 
+        titleTwo = {props.titleTwo} 
+        titleThree = {props.titleThree}
+        options={props.options}
+      />
     </>
   );
 }

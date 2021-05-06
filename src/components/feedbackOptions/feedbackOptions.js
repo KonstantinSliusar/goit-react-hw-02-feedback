@@ -4,6 +4,10 @@ import propTypes from 'prop-types';
 export default function FeedbackOptions(props) {
   return (
     <>
+      <h1>{props.titleOne}</h1>
+      <h2>{props.titleTwo}</h2>
+      <h2>{props.titleThree}</h2>
+    
       <button
         type="button"
         onClick={evt => {
@@ -36,4 +40,5 @@ export default function FeedbackOptions(props) {
 
 FeedbackOptions.propTypes = {
   onLeaveFeedback: propTypes.func,
+  
 };

@@ -45,7 +45,9 @@ export default class App extends Component {
       <>
         <section className={styles.container}>
           <Section
-            title="Please leave feedback!!"
+            titleOne="Section Stats"
+            titleTwo="Please leave feedback!!"
+            titleThree="Feedback options"
             options={[good, bad, neutral]}
             onLeaveFeedback={this.incrementState}
           />
